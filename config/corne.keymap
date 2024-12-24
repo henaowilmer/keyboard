@@ -14,7 +14,11 @@
         ene: ene {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp N &kt RIGHT_ALT &kp N>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT &kp N &kt RIGHT_ALT &kp N>,
+                <&macro_release>;
+
             label = "ENE";
         };
     };
